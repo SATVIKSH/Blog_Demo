@@ -21,7 +21,7 @@ class FetchBlogController extends GetxController {
       }).toList();
       blogs.value = fetchedBlogs;
     } catch (e) {
-      Get.snackbar('Error', 'Failed to fetch users: $e');
+      Get.snackbar('Error', 'Failed to fetch : $e');
     }
   }
 }
