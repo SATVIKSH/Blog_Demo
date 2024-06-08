@@ -1,6 +1,7 @@
-import 'package:blog/blog_card.dart';
-import 'package:blog/fetch_blogs_controller.dart';
+import 'package:blog/data/controllers/fetch_blogs_controller.dart';
+
 import 'package:blog/utils/colors.dart';
+import 'package:blog/views/blog_card.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -29,14 +30,14 @@ class Home extends StatelessWidget {
         ),
       ),
       body: Obx(() {
-        if (blogController.blogs.isEmpty) {
+        if (blogController.dbBlogs.isEmpty) {
           return const Center(
               child: Center(child: CircularProgressIndicator()));
         }
         return ListView.builder(
-            itemCount: blogController.blogs.length,
+            itemCount: blogController.dbBlogs.length,
             itemBuilder: (context, index) {
-              final blog = blogController.blogs[index];
+              final blog = blogController.dbBlogs[index];
               return Padding(
                 padding: index == 0
                     ? EdgeInsets.only(top: 8)

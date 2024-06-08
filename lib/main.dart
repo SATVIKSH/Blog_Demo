@@ -1,7 +1,9 @@
-import 'package:blog/dependencies.dart';
+import 'package:blog/bindings/dependencies.dart';
+
 import 'package:blog/firebase_options.dart';
-import 'package:blog/home_page.dart';
+
 import 'package:blog/routes.dart';
+import 'package:blog/views/home_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

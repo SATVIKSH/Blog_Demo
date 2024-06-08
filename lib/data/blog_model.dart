@@ -20,4 +20,24 @@ class BlogModel {
         summary: doc['summary'],
         image: doc['image']);
   }
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'link': link,
+      'title': title,
+      'summary': summary,
+      'image': image,
+    };
+  }
+
+  // Create a BlogModel from a Map.
+  factory BlogModel.fromMap(Map<String, dynamic> map) {
+    return BlogModel(
+      id: map['id'],
+      link: map['link'],
+      title: map['title'],
+      summary: map['summary'],
+      image: map['image'],
+    );
+  }
 }

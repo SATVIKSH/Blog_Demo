@@ -1,4 +1,4 @@
-import 'package:blog/blog_model.dart';
+import 'package:blog/data/blog_model.dart';
 import 'package:blog/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

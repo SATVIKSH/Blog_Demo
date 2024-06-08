@@ -1,5 +1,5 @@
-import 'package:blog/blog_post.dart';
-import 'package:blog/home_page.dart';
+import 'package:blog/views/blog_post.dart';
+import 'package:blog/views/home_page.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 
 final get_routes = [
